@@ -8,6 +8,10 @@
 > **Live deployment:** This assignment is deployed on an AWS EC2 instance with a custom domain.
 > Access it at **[https://dsi.fantinatti.net/](https://dsi.fantinatti.net/)** (login required).
 
+[![Watch the demo on YouTube](Video_Thumbnail.jpg)](https://youtu.be/jrAQBtDiemI)
+
+*▶ Click the image above to watch the demo on YouTube.*
+
 ---
 
 ## Architecture
