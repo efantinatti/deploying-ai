@@ -1,7 +1,10 @@
 # Cosmos — AI Science Companion
 
+<div align="center">
+
 ![Cosmos logo](../logo/Logo.jpg)
-![University of Toronto crest](https://upload.wikimedia.org/wikipedia/en/0/04/Utoronto_coa.svg)
+
+</div>
 
 **Cosmos** is a calm, curious conversational AI astronomer built for **Assignment 2** of the *Deploying AI 3* course at the **University of Toronto Data Sciences Institute**.  Ask it about today's NASA astronomy picture, fact-check a popular science claim, or hand it a maths problem — it will answer with quiet precision.
 
@@ -17,7 +20,7 @@
 ## Architecture
 
 ```text
-assignment_chat/
+assignment_chat_aws/
 ├── app.py                  # Gradio Blocks UI + LangGraph agent entry point
 ├── prompts.py              # Cosmos system prompt and personality
 ├── memory.py               # Conversation history trimming utility
@@ -122,10 +125,10 @@ politely deflected.
 ### 1 — Copy and fill in secrets
 
 ```bash
-cp 05_src/.secrets.template 05_src/assignment_chat/.secrets
+cp 05_src/.secrets.template 05_src/assignment_chat_aws/.secrets
 ```
 
-Edit `05_src/assignment_chat/.secrets` and fill in:
+Edit `05_src/assignment_chat_aws/.secrets` and fill in:
 
 ```dotenv
 API_GATEWAY_KEY=<your course API gateway key>
@@ -148,7 +151,7 @@ No additional packages need to be installed.
 ### 3 — Run the app
 
 ```bash
-cd 05_src/assignment_chat
+cd 05_src/assignment_chat_aws
 python app.py
 ```
 
@@ -215,7 +218,7 @@ Open the URL printed by Gradio (default `http://127.0.0.1:7860`) in your browser
 | Item | Detail |
 | --- | --- |
 | Client type | `PersistentClient` (file-based) |
-| Storage path | `assignment_chat/data/chroma_db/` |
+| Storage path | `assignment_chat_aws/data/chroma_db/` |
 | Collection | `science_misconceptions` |
 | Embedding model | `text-embedding-3-small` (1536 dimensions) |
 | Chunking | `RecursiveCharacterTextSplitter`, chunk_size=500, overlap=60 |

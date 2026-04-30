@@ -1,7 +1,10 @@
 # Cosmos — AI Science Companion
 
+<div align="center">
+
 ![Cosmos logo](../logo/Logo.jpg)
-![University of Toronto crest](https://upload.wikimedia.org/wikipedia/en/0/04/Utoronto_coa.svg)
+
+</div>
 
 **Cosmos** is a calm, curious conversational AI astronomer built for **Assignment 2** of the *Deploying AI 3* course at the **University of Toronto Data Sciences Institute**.  Ask it about today's NASA astronomy picture, fact-check a popular science claim, or hand it a maths problem — it will answer with quiet precision.
 
